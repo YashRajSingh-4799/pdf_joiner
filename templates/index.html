@@ -15,28 +15,72 @@
       crossorigin="anonymous"
     />
 
-    <title>Hello, world!</title>
+    <title>PDF Joiner</title>
   </head>
   <body>
-    <div class="container">
-      <h1>PDF Merger</h1>
-      <form method="post" action="/merge" enctype="multipart/form-data">
-        <div class="form-group">
-          <label for="exampleFormControlFile1"
-            >Upload your pdf file you want to merge</label
-          >
-          <input
-            type="file"
-            name="pdfs"
-            class="form-control-file"
-            id="exampleFormControlFile1"
-            multiple
-            accept=".pdf"
-          />
-          <input class="btn btn-primary my-4" type="submit" value="Submit" />
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">PDF Joiner- Merge any PDF</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      
+    </nav>
+
+
+
+
+    
+    <div class="card ">
+      
+      <div class="card-body ">
+        <div class="container mx-auto">
+          <h1>PDF Joiner</h1>
+          <form method="post" action="/merge" enctype="multipart/form-data">
+            <div class="form-group">
+              <label for="exampleFormControlFile1"
+                >Combine any 2 PDFs in the order you want with the easiest PDF merger available.</label
+              >
+              <div class="col-lg-3 center-block">
+
+                <input
+                type="file"
+                name="pdfs"
+                class="form-control-file"
+                id="exampleFormControlFile1"
+                multiple
+                accept=".pdf"
+                />
+              </div>
+              <input 
+                class="btn btn-primary my-4" 
+                type="submit" 
+                value="Submit" 
+              />
+            </div>
+          </form>
         </div>
-      </form>
+      </div>
     </div>
+
+
+    
+
+
+    <!-- Footer -->
+
+    <!-- Footer -->
+<footer class="page-footer font-small blue bg-dark">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center text-white py-3">© 2022 Copyright:
+    <a href="/"> YRSingh.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

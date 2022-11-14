@@ -1,1 +1,1 @@
-# PdfMerger
+# PDF Joiner
