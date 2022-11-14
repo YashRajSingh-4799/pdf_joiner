@@ -18,7 +18,7 @@ app.post("/merge", upload.array("pdfs", 2), async (req, res, next) => {
     path.join(__dirname, req.files[1].path)
   );
   // res.send({data: req.files})
-  res.redirect(`http://localhost:3000/static/${d}.pdf`);
+  res.redirect(`https://pdf-joiner.herokuapp.com/static/${d}.pdf`);
 
   // req.files is array of `pdfs` files
   // req.body will contain the text fields, if there were any
